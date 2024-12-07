@@ -1,0 +1,180 @@
+
+    .order-heading {
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Poppins', sans-serif; /* Custom font */
+        color: #2D3748; /* Darker text color */
+        margin-bottom: 25px;
+        letter-spacing: 1px;
+    }
+
+    /* Container Style */
+    .order-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #EDF2F7;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        max-width: 700px;
+        margin: auto;
+    }
+
+    /* Order Item Style */
+    .order-item {
+        display: flex;
+        justify-content: space-between;
+        background-color: #ffffff;
+        border: 1px solid #E2E8F0;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 15px;
+        width: 100%;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+    .order-item:hover {
+        transform: scale(1.02); /* Slight hover effect */
+    }
+
+    /* Item Details */
+    .item-details {
+        flex: 1;
+        margin: 0 15px;
+    }
+
+    /* Label Styling */
+    .item-label {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        color: #4A5568;
+        margin-bottom: 8px;
+    }
+
+    /* Input Boxes */
+    .inputbox1 {
+        background: #EDF2F7;
+        border: 1px solid #CBD5E0;
+        border-radius: 5px;
+        padding: 8px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        color: #2D3748;
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    .total-section {
+        background-color: #ffffff;
+        border: 1px solid #ffffff;
+        
+        border-radius: 10px;
+        padding: 20px;
+        width: 100%;
+        margin-top: 25px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .total-details {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+
+    .total-label {
+        font-size: 20px;
+        font-weight: bold; 
+        color: #2D3748; 
+
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@500&display=swap');
+
+
+
+
+
+    .table_container {
+        margin: 20px;
+    }
+
+    .header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .header h1 {
+        font-size: 28px;
+        color: #1c76db;
+        margin-bottom: 5px;
+    }
+
+    .header p {
+        font-size: 18px;
+        color: #666;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    table th, table td {
+        border: 1px solid #000000;
+        padding: 12px;
+        text-align: center;
+    }
+
+    table th {
+        background-color: #1c76db;
+        color: #ffffff;
+    }
+
+    table td {
+        background-color: #f2f2f2;
+    }
+
+    .updateBtn {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .add_new {
+        padding: 10px 20px;
+        color: #ffffff;
+        background-color: #0298cf;
+    }
+
+    button {
+        outline: none;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        padding: 10px;
+        color: #ffffff;
+    }
+
+    .updateBtn:hover {
+        background-color: #45a049;
+    }
+
+    .deleteBtn {
+        background-color: #f44336;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 5px;
+    }
+
+    .deleteBtn:hover {
+        background-color: #e31e10;
+    }

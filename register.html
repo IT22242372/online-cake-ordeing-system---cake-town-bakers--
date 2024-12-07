@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('images/abc.webp'); /* Add  cake image here */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            filter :blur(0px)
+        }
+        .register-container {
+            background: rgba(90, 89, 89, 0.367);
+            padding: 30px;
+            border-radius: 20px;
+            width: 400px;
+            text-align: center;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.892);
+        }
+        .register-container h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .register-container input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #cccccc;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+        .register-container input#firstName,
+        .register-container input#lastName {
+            background-color: #cccccc; /* grey transparent for First Name and Last Name */
+            border-color: #cccccc; /* border */
+        }
+        .register-container input[type="email"],
+        .register-container input[type="password"],
+        .register-container input[type="tel"] {
+            background-color:#cccccc; /* grey transparentfor other inputs */
+            border-color: #cccccc; /* Standard border color */
+        }
+        .register-container select {
+            width: 84%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #cccccc; /* Light grey background */
+            color: #000; /* Text color */
+            border: 1px solid #cccccc;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+        .register-container select:focus {
+            outline: none;
+            border-color: #35259d; /* Darker border on focus */
+            background-color: #cccccc; /* Transparent grey background on focus */
+        }
+        .register-container .button {
+            width: 50%;
+            padding: 10px;
+            background-color: #35259d;
+            border: none;
+            color: rgba(255, 255, 255, 0.919);
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .register-container .button:hover {
+            background-color: #483D8B;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <h1>Register</h1>
+        <form action="register.php" method="post">
+        <input type="text" placeholder="First Name" id="firstName" name="fname">
+        <input type="text" placeholder="Last Name" id="lastName" name="lname">
+        <input type="email" placeholder="Email" id="email" name="email">
+        <input type="password" placeholder="Password" id="password" name="pass">
+        <input type="tel" placeholder="Contact Number" id="contactNumber" name="contact">
+        <select name="user_type">
+            <option value="user">User</option>
+            <option value="admin">Admin</option>
+        </select>
+        <input type="submit" name="submit" value="CREATE" class="button">
+        </form>
+        <!-- <button onclick="registerUser()">Create</button> -->
+    </div>
+
+    <!-- <script>
+        function registerUser() {
+            const firstName = document.getElementById("firstName").value;
+            const lastName = document.getElementById("lastName").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            const contactNumber = document.getElementById("contactNumber").value;
+
+            if (firstName && lastName && email && password && contactNumber) {
+                // Here, you would typically send the data to a backend server
+                alert("User Registered Successfully!");
+                console.log({
+                    firstName,
+                    lastName,
+                    email,
+                    password,
+                    contactNumber
+                });
+            } else {
+                alert("Please fill out all fields.");
+            }
+        }
+    </script> -->
+</body>
+</html>
+
